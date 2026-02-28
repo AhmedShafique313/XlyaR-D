@@ -160,8 +160,7 @@ def generate_xlya_login_message(user_name="User"):
 if __name__ == "__main__":
     local_time = get_local_datetime()
     country = get_user_country()
-    print(f"Detected Local Time: {local_time}")
-    print(f"Detected User Country: {country}")
+    print(local_time)
 
     response = generate_xlya_login_message(user_name="Alex")
-    print(f"\nXlya Response:\n{response}\n")
+    print(response)
